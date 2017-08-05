@@ -1,0 +1,12 @@
+RewriteEngine on
+
+RewriteRule ^trang-chu.html$ index.php
+RewriteRule ^thanh-toan.html$ checkout.php
+RewriteRule ^cua-hang.html$ product.php
+RewriteRule ^tin-tuc.html$ tin-tuc.php
+RewriteRule ^gioi-thieu.html$ gioi-thieu.php
+RewriteRule ^lien-he.html$ lien-he.php
+RewriteRule ^tuyen-dung.html$ tuyen-dung.php
+RewriteRule ^hang-([a-zA-Z0-9_-]+)-([0-9]+).html$ product.php?ID_Hang=$2
+RewriteRule ^san-pham-([a-zA-Z0-9_-]+)-([0-9]+).html$ single-product.php?ID_SP=$2
+RewriteRule ^mua-san-pham-([a-zA-Z0-9_-]+)-([0-9]+).html$ cart.php?ID_SP=$2
